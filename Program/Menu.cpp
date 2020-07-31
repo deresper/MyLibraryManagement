@@ -317,6 +317,8 @@ int analyzingMenuManager(){
 	printf("2. Thong ke so luong sach theo the loai.\n");
 	printf("3. Thong ke so luong doc gia.\n");
 	printf("4. Thong ke so luong doc gia theo gioi tinh.\n");
+	printf("5. Thong ke so luong sach dang duoc muon.\n");
+	printf("6. Thong ke danh sach doc gia bi tre han.\n");
 	printf("0. Quay ve.\n");
 
 	return 4;

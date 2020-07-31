@@ -9,14 +9,13 @@
 #include "linkedListCategoryBooks.h"
 #include "statistic.h"
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 bool askToPrintAllBook(LLNodeBook lsbook) // In danh sách sách
 { 
 	NodeBook *pNow = lsbook.head;
 	if (pNow == NULL)
 		return 0;
 	char *stringMoneyPayement;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch(getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach cac sach trong thu vien khong"), 0)){
 		textBgColor(WHITE, BLACK);
 		case 1:
@@ -68,13 +67,12 @@ void analyzingBook() // Thống kế sách
 	freeLinkListBook(lsbook); // Giải phóng danh sách liên kết
 }
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 bool askToPrintAllCato(LLNodeCategory lsCate) // In danh sách thể loại
 { 
 	NodeCategory *pNow = lsCate.head;
 	if (pNow == NULL)
 		return 0;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch (getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach the loai sach trong thu vien khong"), 0)){
 		textBgColor(WHITE, BLACK);
 		case 1:
@@ -122,14 +120,14 @@ void analyzingCatoBook(){
 	fclose(fileBook);
 	freeLinkListBook(lsCate); // Giải phóng danh sác liên kết
 }
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 bool askToPrintAllReader(LLNodeReader lsreader){ // ll reader
 	NodeReader *pNow = lsreader.head;
 	if (pNow == NULL)
 		return 0;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch (getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach doc gia trong thu vien khong"), 0)){
-		textBgColor(GREEN, BLACK);
+		textBgColor(WHITE, BLACK);
 		case 1:
 			system(cls);
 			showTitleListReader();
@@ -177,10 +175,10 @@ void analyzingReader(){
 	fclose(fileReader);
 	freeLinkListReader(lsreader);
 }
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 bool askToPrintAllSexReader(LLNodeReader lsMaleReader, LLNodeReader lsFemaleReader){ // 2 ll sex
 	NodeReader *pNow = lsMaleReader.head;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch (getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach doc gia trong gioi tinh khong"), 0)){
 		textBgColor(WHITE, BLACK);
 		case 1:
@@ -258,7 +256,7 @@ void analyzingSexReader(){
 
 bool askToPrintAllBorrowingBook(LLNodeBorrowBook lsBorBook){ // ll borrowbook
 	NodeBorrowBook *pNow = lsBorBook.head;;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch (getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach cac sach dang duoc muon khong"), 0)){
 		textBgColor(WHITE, BLACK);
 		case 1:
@@ -307,7 +305,7 @@ void analyzingBorrowingBook(){
 
 bool askToPrintAllOverdueReader(LLNodeBorrowBook lsBorBook){ // ll borrowbook
 	NodeBorrowBook *pNow = lsBorBook.head;
-	textBgColor(YELLOW, BLACK);
+	textBgColor(WHITE, BLACK);
 	switch (getNumberPressKey(askYesNoQuestion((char*)"Ban co muon hien danh sach cac doc gia bi tre han tra sach khong"), 0)){
 		textBgColor(WHITE, BLACK);
 		case 1:
