@@ -464,6 +464,7 @@ void searchISBN() // Tìm sách qua ISBN
 		showTitleFindBookByISBN();
 		textBgColor(RED, BLACK);
 		printf("Sach khong ton tai.\n");
+		textBgColor(WHITE, BLACK);
 		Sleep(1000);
 	}
 	else
@@ -497,6 +498,7 @@ void searchBookName()
 		showTitleFindBookByName();
 		textBgColor(RED, BLACK);
 		printf("Sach khong ton tai.\n");
+		textBgColor(WHITE, BLACK);
 		Sleep(1000);
 	}
 
